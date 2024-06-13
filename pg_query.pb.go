@@ -5454,7 +5454,7 @@ type Node struct {
 	//	*Node_List
 	//	*Node_IntList
 	//	*Node_OidList
-	Node isNode_Node `protobuf_oneof:"node"`
+	Node IsNode_Node `protobuf_oneof:"node"`
 }
 
 func (x *Node) Reset() {
@@ -5489,7 +5489,7 @@ func (*Node) Descriptor() ([]byte, []int) {
 	return file_pg_query_proto_rawDescGZIP(), []int{2}
 }
 
-func (m *Node) GetNode() isNode_Node {
+func (m *Node) GetNode() IsNode_Node {
 	if m != nil {
 		return m.Node
 	}
@@ -7092,8 +7092,9 @@ func (x *Node) GetOidList() *OidList {
 	return nil
 }
 
-type isNode_Node interface {
+type IsNode_Node interface {
 	isNode_Node()
+	Accept(v Visitor) bool
 }
 
 type Node_Alias struct {
