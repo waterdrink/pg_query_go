@@ -4178,12 +4178,14 @@ func (n *SelectStmt) Accept(v Visitor) bool {
 		}
 	}
 	if n.Larg != nil {
-		if !n.Larg.Accept(v) {
+		selectNode := &Node_SelectStmt{SelectStmt: n.Larg}
+		if !selectNode.Accept(v) {
 			return false
 		}
 	}
 	if n.Rarg != nil {
-		if !n.Rarg.Accept(v) {
+		selectNode := &Node_SelectStmt{SelectStmt: n.Rarg}
+		if !selectNode.Accept(v) {
 			return false
 		}
 	}
