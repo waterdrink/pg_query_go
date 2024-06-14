@@ -3,7 +3,7 @@ package pg_query
 import (
 	proto "github.com/golang/protobuf/proto"
 
-	"github.com/pganalyze/pg_query_go/v2/parser"
+	"github.com/waterdrink/pg_query_go/v2/parser"
 )
 
 func Scan(input string) (result *ScanResult, err error) {

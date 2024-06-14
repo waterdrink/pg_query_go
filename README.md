@@ -10,7 +10,7 @@ You can find further background to why a query's parse tree is useful here: http
 ## Installation
 
 ```
-go get github.com/pganalyze/pg_query_go/v2
+go get github.com/waterdrink/pg_query_go/v2
 ```
 
 Due to compiling parts of PostgreSQL, the first time you build against this library it will take a bit longer.
@@ -71,7 +71,7 @@ package main
 import (
 	"fmt"
 
-	pg_query "github.com/pganalyze/pg_query_go/v2"
+	pg_query "github.com/waterdrink/pg_query_go/v2"
 )
 
 func main() {
@@ -97,7 +97,7 @@ package main
 import (
 	"fmt"
 
-	pg_query "github.com/pganalyze/pg_query_go/v2"
+	pg_query "github.com/waterdrink/pg_query_go/v2"
 )
 
 func main() {
@@ -133,7 +133,7 @@ package main
 
 import (
   "fmt"
-  "github.com/pganalyze/pg_query_go/v2"
+  "github.com/waterdrink/pg_query_go/v2"
 )
 
 func main() {

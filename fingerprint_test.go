@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"testing"
 
-	pg_query "github.com/pganalyze/pg_query_go/v2"
+	pg_query "github.com/waterdrink/pg_query_go/v2"
 )
 
 type fingerprintTest struct {
